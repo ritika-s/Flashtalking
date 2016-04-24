@@ -1,4 +1,4 @@
-app.controller('ProductController', ['$scope', 'master', '$routeParams','$route', function($scope, master, $routeParams,$route) {
+app.controller('CategoryController', ['$scope', 'master', '$routeParams','$route', function($scope, master, $routeParams,$route) {
     master.success(function(data) {
         $scope.styles = data;
         $scope.detail = data.Data.find(findReference);
@@ -8,7 +8,6 @@ app.controller('ProductController', ['$scope', 'master', '$routeParams','$route'
         $scope.category = $routeParams.item;
     });
     $scope.reloadRoute = function() {
-        console.log('here2');
         $route.reload();
     }
 }]);

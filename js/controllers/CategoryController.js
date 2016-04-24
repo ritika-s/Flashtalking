@@ -3,7 +3,6 @@ app.controller('CategoryController', ['$scope', '$route', 'product', function($s
     $scope.productCategories = data;
   });
   $scope.reloadRoute = function() {
-    console.log('here');
     $route.reload();
   }
 }]);
