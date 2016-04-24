@@ -1,0 +1,17 @@
+<div id="breadcrumb">
+	<ul>
+		<li>
+			<a href="#/" ng-click="reloadRoute()"> Home </a>
+		</li>
+		<li>
+			<a href="#/{{ category }}" ng-click="reloadRoute()"> {{ category }} </a>
+		</li>
+	</ul>
+</div>
+<div class="page">
+	<a ng-href="#/{{ category }}/{{ Data.id }}" class="product" ng-repeat="Data in styles.Data">
+		<h4>{{ Data.title }}</h4>
+		<p class="price">{{ Data.price | currency }}</p>
+		<img class="{{ category }}-product small-product" ng-src="{{ Data.image }}">
+	</a>
+</div>

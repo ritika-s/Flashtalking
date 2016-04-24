@@ -1,0 +1,150 @@
+body{
+    padding: 20px 10%;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: rgba(48,48,48,1);
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 30px;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+}
+h2{
+    margin-bottom: 35px;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+}
+ul{
+    list-style: none;
+}
+/* used SASS -> CSS */
+#breadcrumb {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+#breadcrumb li {
+    float: left;
+}
+#breadcrumb li a {
+    color: #FFF;
+    display: block;
+    background: black;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+}
+#breadcrumb li:nth-child(even) a {
+    background-color: black;
+}
+#breadcrumb li:nth-child(even) a:before {
+    border-color: black;
+    border-left-color: transparent;
+}
+#breadcrumb li:nth-child(even) a:after {
+    border-left-color: black;
+}
+#breadcrumb li:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+#breadcrumb li:first-child a:before {
+    border: none;
+}
+#breadcrumb li:last-child a {
+    padding-right: 15px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 4px 4px 0;
+}
+#breadcrumb li:last-child a:after {
+    border: none;
+}
+#breadcrumb li a:before, #breadcrumb li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid black;
+    border-width: 20px 10px;
+    width: 0;
+    height: 0;
+}
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+#breadcrumb li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: black;
+}
+#breadcrumb li a:hover {
+    background-color: purple;
+}
+#breadcrumb li a:hover:before {
+    border-color: purple;
+    border-left-color: transparent;
+}
+#breadcrumb li a:hover:after {
+    border-left-color: purple;
+}
+#breadcrumb li a:active {
+    background-color: purple;
+}
+#breadcrumb li a:active:before {
+    border-color: purple;
+    border-left-color: transparent;
+}
+#breadcrumb li a:active:after {
+    border-left-color: purple;
+}
+
+.category{
+    width: 15%;
+    height: 250px;
+     background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    text-align: center;
+    margin: 2%;
+    padding: 10px 2%;
+}
+.category:hover {
+    background-color: lavenderblush;
+}
+.product{
+    margin: 2%;
+    padding: 10px 2%;
+    display: inline-block;
+    width: 40%;
+}
+.product img{
+    width: 50%;
+    height: auto;
+}
+.single-product img{
+    width: 80%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    border-width: 1px 0px 0px 0px;
+    border-style: dotted;
+    text-transform: uppercase;
+    float: right;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
