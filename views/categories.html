@@ -1,0 +1,14 @@
+<div id="breadcrumb">
+    <ul>
+        <li>
+            <a href="#/" ng-click="reloadRoute()"> Home </a>
+        </li>
+    </ul>
+</div>
+<div class="page">
+    <a href="#/{{ Data.id }}" ng-click="CategoryController.setCategory(Data.id)" class="category" ng-repeat="Data in productCategories.Data">
+      <div>
+        <h3>{{ Data.title }}</h3>
+      </div>
+    </a>
+</div>
